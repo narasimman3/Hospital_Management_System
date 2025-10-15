@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Appointments - Hospital Management</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav>
+    <h1>Hospital Management</h1>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="users.html">Users</a></li>
+      <li><a href="doctors.html">Doctors</a></li>
+      <li><a href="patients.html">Patients</a></li>
+      <li><a href="appointments.html" class="active">Appointments</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h2>Appointments</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Patient</th>
+          <th>Doctor</th>
+          <th>Date</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>1</td><td>John Doe</td><td>Dr. Smith</td><td>2025-10-16</td></tr>
+        <tr><td>2</td><td>Jane Doe</td><td>Dr. Johnson</td><td>2025-10-17</td></tr>
+      </tbody>
+    </table>
+
+    <h3>Book Appointment</h3>
+    <form id="appointmentForm">
+      <input type="text" placeholder="Patient Name" required>
+      <input type="text" placeholder="Doctor Name" required>
+      <input type="date" required>
+      <button type="submit">Add Appointment</button>
+    </form>
+  </main>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

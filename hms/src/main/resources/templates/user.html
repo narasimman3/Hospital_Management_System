@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Users - Hospital Management</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <nav>
+    <h1>Hospital Management</h1>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="users.html" class="active">Users</a></li>
+      <li><a href="doctors.html">Doctors</a></li>
+      <li><a href="patients.html">Patients</a></li>
+      <li><a href="appointments.html">Appointments</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h2>Users</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>ID</th>
+          <th>Name</th>
+          <th>Role</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr><td>1</td><td>Admin</td><td>Administrator</td></tr>
+        <tr><td>2</td><td>Receptionist</td><td>Staff</td></tr>
+      </tbody>
+    </table>
+
+    <h3>Add User</h3>
+    <form id="userForm">
+      <input type="text" placeholder="Name" required>
+      <input type="text" placeholder="Role" required>
+      <button type="submit">Add User</button>
+    </form>
+  </main>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
